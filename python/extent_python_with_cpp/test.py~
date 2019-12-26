@@ -1,5 +1,0 @@
-#!/usr/bin/python
-import build.cpsr as c3p
-
-print(dir(c3p))
-print(c3p.txt2txt("hello"))
