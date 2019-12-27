@@ -19,7 +19,7 @@ char* test(const char* inp)
   return cstr;
 }
 
-static PyObject * warp_test(PyObject *self, PyObject *args) {
+static PyObject * wrap_test(PyObject *self, PyObject *args) {
     const char* inp;
     if (!(PyArg_ParseTuple(args, "s", &inp))) {
         return NULL;
@@ -28,7 +28,7 @@ static PyObject * warp_test(PyObject *self, PyObject *args) {
 }
 
 static PyMethodDef DemoMethods[] = {
-    {"test", warp_test, METH_VARARGS, "test method."},
+    {"test", wrap_test, METH_VARARGS, "test method."},
     {NULL, NULL, 0, NULL}        /* Sentinel */
 };
 
